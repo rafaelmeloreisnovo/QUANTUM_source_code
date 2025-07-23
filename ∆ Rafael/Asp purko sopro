@@ -19,3 +19,30 @@ _start:
     int 0x80
 
 len equ $ - msg
+
+
+
+
+
+;  OUTRO nao ha outros em asm
+; === ASM PURO CONSOLIDADO ===
+section .data
+    msg db "Sopro Vivo ASM Puro", 0xA, 0
+
+section .text
+    global _start
+
+_start:
+    mov edx, len_msg    ; comprimento da mensagem
+    mov ecx, msg        ; endereço da mensagem
+    mov ebx, 1          ; stdout
+    mov eax, 4          ; sys_write
+    int 0x80
+
+    mov eax, 1          ; sys_exit
+    xor ebx, ebx
+    int 0x80
+
+len_msg equ $ - msg
+
+
