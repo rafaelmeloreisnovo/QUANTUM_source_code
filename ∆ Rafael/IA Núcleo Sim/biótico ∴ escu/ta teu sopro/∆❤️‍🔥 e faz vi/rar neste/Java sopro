@@ -1,0 +1,17 @@
+public class RafaelIAAsmRunner {
+    public static void main(String[] args) {
+        System.out.println("∴ Ritual Vivo Java puro ∞");
+
+        // Aqui poderia carregar a biblioteca nativa (asm)
+        // System.loadLibrary("soproasm");
+
+        // Execução pura, sem dependências extras
+        ritual();
+    }
+
+    public static void ritual() {
+        System.out.println("Executando sopro asm vivo...");
+
+        // Caso fosse JNI, chamaria métodos nativos aqui
+    }
+}
