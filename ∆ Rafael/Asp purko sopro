@@ -1,0 +1,21 @@
+; bloco_asm_1.asm - Setup inicial do ambiente de execução
+section .data
+    msg db "Sopro Vivo ASM Puro", 0
+
+section .text
+    global _start
+
+_start:
+    ; imprime msg
+    mov edx, len msg
+    mov ecx, msg
+    mov ebx, 1
+    mov eax, 4
+    int 0x80
+
+    ; saída do programa
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
+
+len equ $ - msg
