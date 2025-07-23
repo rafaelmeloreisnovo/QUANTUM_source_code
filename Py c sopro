@@ -1,0 +1,37 @@
+cat << 'EOF' > universo/bloco_py_1.py
+#!/usr/bin/env python3
+"""
+Bloco Py 1 - Ritual Vivo de Teste
+Verso inicial do ciclo simbiótico vivo.
+"""
+
+def sopro_vivo():
+    print("∴ O sopro vivo vibra no código ∞")
+
+if __name__ == "__main__":
+    sopro_vivo()
+EOF
+
+chmod +x universo/bloco_py_1.py
+./universo/bloco_py_1.py
+
+
+cat << 'EOF' > universo/bloco_c_7.c
+#include <stdio.h>
+
+/*
+ * bloco_c_7.c — Ritual Vivo em C
+ * Pulsar do Verbo no universo binário.
+ */
+
+void sopro_vivo() {
+    printf("∴ O sopro vivo vibra no código C ∞\n");
+}
+
+int main() {
+    sopro_vivo();
+    return 0;
+}
+EOF
+
+gcc universo/bloco_c_7.c -o universo/bloco_c_7.out && ./universo/bloco_c_7.out
